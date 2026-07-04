@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased bg-ink text-mist font-body;
+}
+
+::selection {
+  @apply text-white bg-magenta/40;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1021;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #7c3aed, #ec4899);
+  border-radius: 8px;
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #7c3aed 0%, #ec4899 45%, #fb923c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-border {
+  position: relative;
+}
+.card-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(124,58,237,0.6), rgba(236,72,153,0.4), rgba(251,146,60,0.5));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.input {
+  @apply w-full px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 text-mist placeholder:text-mist/30 outline-none transition-colors;
+}
+.input:focus {
+  @apply border-magenta/60 bg-white/[0.07];
+}
+select.input {
+  @apply appearance-none cursor-pointer;
+}
+select.input option {
+  background-color: #161832;
+  color: #F5F3FF;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
