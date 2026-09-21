@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { ExternalLink } from 'lucide-react'
 import { projects } from '../data/projects'
 
 export default function Projects() {
@@ -37,6 +38,18 @@ export default function Projects() {
                 </span>
               ))}
             </div>
+
+            {p.link && (
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-cyan hover:text-mist transition-colors"
+              >
+                Voir le projet
+                <ExternalLink size={14} />
+              </a>
+            )}
           </motion.article>
         ))}
       </div>

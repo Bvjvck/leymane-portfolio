@@ -1,5 +1,27 @@
 export const projects = [
   {
+    id: 'xaalis',
+    title: 'Xaalis',
+    tag: 'Application de gestion financière',
+    description:
+      "Application complète de gestion financière personnelle pensée pour l'Afrique de l'Ouest (FCFA) : comptes multi-supports (espèces, banque, mobile money), budgets avec alertes, objectifs d'épargne, transactions récurrentes et rapports mensuels. Écosystème complet : API, web, back-office admin et apps mobiles (React Native + Android natif).",
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Expo / React Native', 'Java / Android'],
+    accent: 'from-cyan to-violet',
+    year: '2026',
+    link: 'https://xaalis-front.vercel.app/',
+  },
+  {
+    id: 'maurigp',
+    title: 'MauriGP',
+    tag: 'Marketplace / Transport de colis',
+    description:
+      "Plateforme mettant en relation des voyageurs (GP) et des expéditeurs pour le transport de colis entre la Mauritanie, l'Afrique et l'Europe : recherche de trajets par pays de départ/arrivée, profils GP vérifiés (identité, système de parrainage), avis publics, mise en contact via messagerie ou WhatsApp, et un service d'achat de produits à l'étranger livrés par un GP. Version web disponible, application mobile à venir.",
+    stack: ['Next.js', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
+    accent: 'from-violet to-cyan',
+    year: '2026',
+    link: 'https://mauri-gp.vercel.app',
+  },
+  {
     id: 'glamshop',
     title: 'GlamShop',
     tag: 'E-commerce',
@@ -8,6 +30,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'JWT'],
     accent: 'from-violet to-magenta',
     year: '2025',
+    link: 'https://glamshop.vercel.app/',
   },
   {
     id: 'nahfik',
@@ -18,6 +41,7 @@ export const projects = [
     stack: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
     accent: 'from-magenta to-amber',
     year: '2026',
+    link: 'https://nahfik.vercel.app/',
   },
   {
     id: 'cahier',
